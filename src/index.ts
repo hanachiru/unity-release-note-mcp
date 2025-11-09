@@ -13,13 +13,12 @@ import {
   getUnityDownloadLinks,
   type ListReleasesParams,
 } from "./tools.ts";
+import denoJson from "../deno.json" with { type: "json" };
 
 const server: Server = new Server(
   {
     name: "unity-release-note-mcp",
-    version: "1.0.0",
-  },
-  {
+    version: denoJson.version,
     capabilities: {
       tools: {},
     },
