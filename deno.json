@@ -1,6 +1,6 @@
 {
   "name": "@hanachiru/unity-release-note-mcp",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "license": "MIT",
   "description": "MCP server for searching Unity release note",
   "exports": "./src/index.ts",
@@ -13,7 +13,8 @@
   },
   "imports": {
     "@deno/dnt": "jsr:@deno/dnt@^0.42.3",
-    "@modelcontextprotocol/sdk": "npm:@modelcontextprotocol/sdk@latest"
+    "@modelcontextprotocol/sdk": "npm:@modelcontextprotocol/sdk@latest",
+    "zod": "npm:zod@^3.23.8"
   },
   "compilerOptions": {
     "strict": true,

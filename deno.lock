@@ -12,7 +12,8 @@
     "jsr:@ts-morph/bootstrap@0.27": "0.27.0",
     "jsr:@ts-morph/common@0.27": "0.27.0",
     "npm:@modelcontextprotocol/sdk@latest": "1.21.1_ajv@8.17.1_express@5.1.0_zod@3.25.76",
-    "npm:@types/jsdom@27": "27.0.0"
+    "npm:@types/jsdom@27": "27.0.0",
+    "npm:zod@^3.23.8": "3.25.76"
   },
   "jsr": {
     "@david/code-block-writer@13.0.3": {
@@ -594,7 +595,8 @@
   "workspace": {
     "dependencies": [
       "jsr:@deno/dnt@~0.42.3",
-      "npm:@modelcontextprotocol/sdk@latest"
+      "npm:@modelcontextprotocol/sdk@latest",
+      "npm:zod@^3.23.8"
     ],
     "packageJson": {
       "dependencies": [
