@@ -1,6 +1,6 @@
 {
   "name": "@hanachiru/unity-release-note-mcp",
-  "version": "0.1.0",
+  "version": "0.1.8",
   "license": "MIT",
   "description": "MCP server for searching Unity release note",
   "exports": "./src/index.ts",

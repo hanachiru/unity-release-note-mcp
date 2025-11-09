@@ -7,7 +7,9 @@
 
 Unity のリリースノート情報を正確に取得するための MCP サーバーです。
 
-![gemini-cli-sample](/assets/gemini-cli-chat.png)
+![gemini-cli-sample](/assets/gemini-cli-chat_JA.png)
+
+[jsr](https://jsr.io/@hanachiru/unity-release-note-mcp), [npm](https://www.npmjs.com/package/@hanachiru/unity-release-note-mcp)
 
 ## 要件
 
@@ -16,7 +18,7 @@ Unity のリリースノート情報を正確に取得するための MCP サー
 ## セットアップ
 
 > [!NOTE]
-> Deno を使用する場合は、コマンドを `deno run jsr:@hanachiru/unity-release-note-mcp` に置き換えてください。
+> Deno を使用する場合は、コマンドを `deno run --allow-net jsr:@hanachiru/unity-release-note-mcp` に置き換えてください。
 
 ### Visual Studio Code (VSCode)
 

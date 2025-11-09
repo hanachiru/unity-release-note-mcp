@@ -9,6 +9,8 @@ MCP server for searching Unity release note.
 
 ![gemini-cli-sample](/assets/gemini-cli-chat.png)
 
+[jsr](https://jsr.io/@hanachiru/unity-release-note-mcp), [npm](https://www.npmjs.com/package/@hanachiru/unity-release-note-mcp)
+
 ## Requirements
 
 - Node.js 18 or later, or Deno
@@ -16,7 +18,7 @@ MCP server for searching Unity release note.
 ## Setup
 
 > [!NOTE]
-> If you use Deno, replace the command with `deno run jsr:@hanachiru/unity-release-note-mcp`.
+> If you use Deno, replace the command with `deno run --allow-net jsr:@hanachiru/unity-release-note-mcp`.
 
 ### Visual Studio Code (VSCode)
 

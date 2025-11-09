@@ -16,9 +16,14 @@ await build({
   package: {
     name: denoJson.name,
     version: denoJson.version,
+    description: denoJson.description,
     license: "MIT",
-    bin: {
-      "unity-release-note-mcp": "./src/index.ts",
+    repository: { // リポジトリ情報も追加推奨
+      type: "git",
+      url: "git+https://github.com/hanachiru/unity-release-note-mcp.git",
     },
+    bugs: {
+      url: "https://github.com/hanachiru/unity-release-note-mcp/issues",
+    }
   },
 });
