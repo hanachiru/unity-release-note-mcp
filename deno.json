@@ -1,0 +1,24 @@
+{
+  "name": "@hanachiru/unity-release-note-mcp",
+  "version": "1.0.0",
+  "license": "MIT",
+  "description": "MCP server for searching Unity release note",
+  "exports": "./src/index.ts",
+  "tasks": {
+    "start": "deno run -A src/index.ts",
+    "dev": "deno run -A --watch src/index.ts",
+    "test": "deno test src/",
+    "npmbuild": "deno run -A npm_build.ts",
+    "publish": "deno publish && deno run -A npm_build.ts && cd npm && npm publish --access public"
+  },
+  "imports": {
+    "@deno/dnt": "jsr:@deno/dnt@^0.42.3",
+    "@modelcontextprotocol/sdk": "npm:@modelcontextprotocol/sdk@latest"
+  },
+  "compilerOptions": {
+    "strict": true,
+    "noImplicitReturns": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true
+  }
+}
