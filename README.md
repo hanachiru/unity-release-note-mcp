@@ -50,6 +50,14 @@ Add the following to `.gemini/settings.json`:
 }
 ```
 
+### Claude Code
+
+Run the following command:
+
+```sh
+claude mcp add unity-release-note -s project -- npx -y @hanachiru/unity-release-note-mcp@latest
+```
+
 ### Others
 
 For other tools, please refer to the documentation as needed and add an MCP server that runs the command `npx @hanachiru/unity-release-note-mcp`.

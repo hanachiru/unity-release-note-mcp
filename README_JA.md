@@ -50,6 +50,14 @@ Unity のリリースノート情報を正確に取得するための MCP サー
 }
 ```
 
+### Claude Code
+
+以下のコマンドを実行してください。
+
+```sh
+claude mcp add unity-release-note -s project -- npx -y @hanachiru/unity-release-note-mcp@latest
+```
+
 ### その他
 
 他のツールについてはそれぞれのドキュメントを参照し、`npx @hanachiru/unity-release-note-mcp` を実行するように設定してください。
