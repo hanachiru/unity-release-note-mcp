@@ -26,4 +26,9 @@ await build({
       url: "https://github.com/hanachiru/unity-release-note-mcp/issues",
     }
   },
+  postBuild() {
+    Deno.copyFileSync("LICENSE", "npm/LICENSE");
+    Deno.copyFileSync("README.md", "npm/README.md");
+    Deno.copyFileSync("README_JA.md", "npm/README_JA.md");
+  },
 });
