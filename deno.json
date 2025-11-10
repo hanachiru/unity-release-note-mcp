@@ -2,7 +2,7 @@
   "name": "@hanachiru/unity-release-note-mcp",
   "version": "0.1.9",
   "license": "MIT",
-  "description": "MCP server for searching Unity release note",
+  "description": "MCP server for accurately retrieving Unity release note information.",
   "exports": "./src/index.ts",
   "tasks": {
     "start": "deno run -A src/index.ts",

@@ -18,7 +18,7 @@ await build({
     version: denoJson.version,
     description: denoJson.description,
     license: "MIT",
-    repository: { // リポジトリ情報も追加推奨
+    repository: {
       type: "git",
       url: "git+https://github.com/hanachiru/unity-release-note-mcp.git",
     },

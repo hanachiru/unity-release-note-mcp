@@ -5,7 +5,7 @@
 
 English | [日本語](README_JA.md)
 
-MCP server for searching Unity release note.
+This is an MCP server for accurately retrieving Unity release note information. It uses the [Unity Release API (1.0)](https://services.docs.unity.com/release/v1/) to obtain precise data.
 
 ![gemini-cli-sample](/assets/gemini-cli-chat.png)
 
@@ -61,6 +61,12 @@ For other tools, please refer to the documentation as needed and add an MCP serv
 | `get_unity_release_notes_content` | Gets the full Markdown content of the release notes for a single, specific Unity version.                                                                     |
 | `list_unity_releases`             | Lists Unity Editor releases matching filters. Does not return the content, only metadata like version, date, and stream. Use this to find available versions. |
 | `get_unity_download_links`        | Gets the installer download links and Unity Hub deep-link for a single, specific Unity version.                                                               |
+
+## Rate Limits
+The internally used [Unity Release API (1.0)](https://services.docs.unity.com/release/v1/) has rate limits. Please be aware of this when using the tool.
+
+> These APIs have rate limiting in place. Requests are limited to 10 request per second and 1000 requests per thirty minutes per endpoint. The APIs respond with a 429 HTTP status code if the rate limit is exceeded.
+> https://services.docs.unity.com/release/v1/#section/Overview
 
 ## License
 
